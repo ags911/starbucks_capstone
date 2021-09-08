@@ -32,12 +32,16 @@ We wanted to find out if a customer would respond to an offer by building a mode
 
 **Step 1:** The first step was to evaluate the data we had to work with. We had three json files to work with, portfolio.json - includes offer meta data, profile.json - includes demographic data for each customer, and transcript - includes records for trasactions, offers viewed/received/completed.
 
+![png](images/corr.png)
+
 **Step 2:** The second step was to convert each dataset to DataFrames before exploring and cleaning them in preparation to combining them. I saved the cleaned DataFrame as a csv file before splitting into training and testing sets. Next, I scaled the X_train and X_test arrays to minimise bias to prepare for fitting them into a suitable algorithm.
+
+![png](images/offer_eda.png)
 
 **Step 3:** I used a special function to loop over various selected algorithms to see how each compares with the model I fit. From the results RF and XGBoost scored very well so I continued fine tuning XGBoost using RandomSearchCV to find the best parameters to use on our model. I saved the model files and continued to further evaluate training quality by looking at the Logloss and Classification Errors. I also looked at the Confusion Matrix and Feature Importance of the model to make sure it can accuratly classify each prediction. My analysis returned training data scores of:
 
-- **Training Accuracy:** 92.42%
-- **Training F1 Score:** 91.70%
+- Training Accuracy: 92.42%
+- Training F1 Score: 91.70%
 
 ![png](images/model_comparison.png)
 
