@@ -26,7 +26,7 @@ We'll use transactional data showing user purchases made on the app including th
 
 Keep in mind as well that someone using the app might make a purchase through the app without having received an offer or seen an offer.
 
-## Conclusion
+## Summary
 
 We wanted to find out if a customer would respond to an offer by building a model that predicts just that.
 
